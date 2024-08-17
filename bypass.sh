@@ -1,5 +1,4 @@
-#!/bin/sh
-
+#!/bin/bash
 serial_number=$(ioreg -c IOPlatformExpertDevice -d 2 | awk -F\" '/IOPlatformSerialNumber/{print $4}')
 serial_number=$(echo $serial_number | tr -d '\n')
 sw_vers_output=$(sw_vers)
