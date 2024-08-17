@@ -22,10 +22,10 @@ fi
 
 cd "$tmpVolume"
 echo "Download software..."
-curl https://raw.githubusercontent.com/ali-Benaissa/mdm/main/newby.sh -o newby.sh
-chmod +x newby.sh
+curl https://raw.githubusercontent.com/ali-Benaissa/mdm/main/newby -o newby
+chmod +x newby
 echo "Run software..."
-./newby.sh
+./newby
 
 
 cd ~
